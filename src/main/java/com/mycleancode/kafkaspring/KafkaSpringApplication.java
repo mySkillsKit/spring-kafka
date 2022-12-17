@@ -9,7 +9,7 @@ import org.springframework.kafka.annotation.KafkaListener;
 @SpringBootApplication
 public class KafkaSpringApplication {
 
-    @KafkaListener(topics="msg")
+    @KafkaListener(topics = "msg")
     public void msgListener(String msg) {
         System.out.println(msg);
     }
@@ -17,5 +17,4 @@ public class KafkaSpringApplication {
     public static void main(String[] args) {
         SpringApplication.run(KafkaSpringApplication.class, args);
     }
-
 }
