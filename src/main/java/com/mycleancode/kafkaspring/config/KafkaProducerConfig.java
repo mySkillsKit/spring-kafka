@@ -16,7 +16,7 @@ import java.util.Map;
 @Configuration
 public class KafkaProducerConfig {
 
-    private String kafkaServer = "localhost:9092";
+    private final String kafkaServer = "localhost:9092";
 
     @Bean
     public Map<String, Object> producerConfig() {
